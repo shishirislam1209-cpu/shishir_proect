@@ -1,0 +1,169 @@
+/* পুরো পেজের জন্য মৌলিক স্টাইল */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* সাইন আপ কন্টেইনার */
+.signup-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    /* ফর্মের সর্বাধিক প্রস্থ */
+    box-sizing: border-box;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    /* ফর্মের সর্বাধিক প্রস্থ */
+    box-sizing: border-box;
+}
+
+/* শিরোনাম */
+.signup-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* ইনপুট গ্রুপ স্টাইল */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    /* লেবেলকে ইনপুটের উপরে রাখে */
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* প্যাডিং এবং বর্ডার প্রস্থের মধ্যে অন্তর্ভুক্ত */
+    font-size: 16px;
+}
+
+/* সাইন আপ বাটন স্টাইল */
+.signup-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #0056b3;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* লগইন লিংক স্টাইল */
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* style.css এ যোগ করুন */
+
+.captcha-group {
+    margin-top: 20px;
+}
+
+.captcha-display {
+    background-color: #e0e0e0;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    /* অক্ষরগুলোর মধ্যে স্পেস */
+    user-select: none;
+    /* যাতে লেখা কপি করা না যায় */
+    /* Captcha-কে দেখতে কিছুটা বাঁকা করতে পারেন */
+    transform: rotate(-2deg);
+    display: inline-block;
+    width: 100%;
+}
