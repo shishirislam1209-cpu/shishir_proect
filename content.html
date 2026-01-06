@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    /* Ensures images scale correctly within their container */
+
+    .video-thumbnail img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        /* Optional: Rounded corners for the thumbnail */
+    }
+
+    /* Styling for the time duration overlay (like on YouTube) */
+    .video-thumbnail {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .duration-badge {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 2px 5px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    /* Custom card styling to remove default padding/border */
+    .video-item {
+        /* Removes link styling */
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        gap: 20px;
+    }
+
+    .video-item:hover .video-title {
+        color: #0d6efd;
+        /* Highlight title on hover */
+    }
+
+    .video-title {
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.3;
+        margin-bottom: 5px;
+    }
+
+    .video-meta {
+        color: #606060;
+        font-size: 0.85rem;
+    }
+</style>
+
+<body>
+    <!-- top bar starts here -->
+    <section class="topbar">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <p class="welcome-text">Welcome to GBSports</p>
+                </div>
+                <div class="col-lg-6 col-md-6 icon">
+                    <ul class="social-icon">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- top bar ends here -->
+
+    <!-- navigation bar start here -->
+    <section class="navigation">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/unnamed-removebg-preview.png" class="rounded">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">FIFA WC 2026</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="content.html" aria-current="page">Content</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- navigation bar end here -->
+    <!-- Common Heading Start Here -->
+    <br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center common-heading">
+                <h1 style="color: rgb(15, 182, 84);  font-weight: bolder;">CONTENT<span></span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- common heading end -->
+    <div class="container my-5">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4">
+
+            <div class="col">
+                <a href="#" class="video-item">
+                    <div class="video-thumbnail">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/zTiMBMZHi8k?si=SI7vcuSMpgYkMQO_"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <span class="duration-badge">5:10</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="#" class="video-item">
+                    <div class="video-thumbnail">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/oXUt4TgR9YY"
+                                title="রাকিবের অ্যাসিস্টে মোরসালিনের দুর্দান্ত গোল, ম্যাচে এগিয়ে বাংলাদেশ | BAN vs IND | T Sports"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <span class="duration-badge">5:49</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="#" class="video-item">
+                    <div class="video-thumbnail">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="1840" height="1035" src="https://www.youtube.com/embed/OFH10h222VE"
+                                title="Highlights | Bangladesh vs Nepal | FIFA International Friendly Match 2025 | T Sports"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <span class="duration-badge">5:49</span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
